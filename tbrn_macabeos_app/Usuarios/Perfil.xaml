@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tbrn_macabeos_app.Perfil"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                    <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor=" #b30000"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                        <Label 
+        Text="Perfil de Usuario"
+        Margin="5"
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                    </Frame>
+                <Image x:Name="Fotografia"
+                        FlexLayout.Order="-1"
+               FlexLayout.AlignSelf="Center"
+                           WidthRequest="180"
+                           HeightRequest="180" Aspect="AspectFit"/>
+                <Label>
+
+                    </Label>
+                <Grid>
+                    <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Nombre Servidor:"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                Grid.Row="0" Grid.Column="0"
+                 />    
+                    <Label x:Name="Nombre_Completo"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                Grid.Row="0" Grid.Column="1"
+                 />
+                    <Label Text="Documento:"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="1" Grid.Column="0"
+                 />
+                    <Label x:Name="DUI"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="1" Grid.Column="1"
+                 />
+                    <Label Text="Fecha de Nacimiento:"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="2" Grid.Column="0"
+                 />
+                    <Label x:Name="Fecha_de_Nacimiento"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="2" Grid.Column="1"
+                 />
+                    <Label Text="Telefono:"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="3" Grid.Column="0"
+                 />
+                    <Label x:Name="Telefono"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="3" Grid.Column="1"
+                 />
+                    <Label Text="Lugar de Trabajo:"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="4" Grid.Column="0"
+                 />
+                    <Label x:Name="Trabajo"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="4" Grid.Column="1"
+                 />
+                    <Label Text="Telefono Trabajo:"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="5" Grid.Column="0"
+                 />
+                    <Label x:Name="Telefono_Trabajo"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="5" Grid.Column="1"
+                 />
+                    <Label Text="Contacto de Emergencia:"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="6" Grid.Column="0"
+                 />
+                    <Label x:Name="Contacto"                        
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="6" Grid.Column="1"
+                 />
+                    <Label Text="Telefono de Contacto:"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="7" Grid.Column="0"
+                 />
+                    <Label x:Name="Telefono_Contacto"                        
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="7" Grid.Column="1"
+                 />
+                    <Label Text="Fecha de Ingreso:"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="8" Grid.Column="0"
+                 />
+                    <Label x:Name="Fecha_Ingreso"            
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="8" Grid.Column="1"
+                 />
+                    <Label Text="Cuenta con Radio Propio:"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="9" Grid.Column="0"
+                 />
+                    <Label x:Name="Radio_Propio"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                           Grid.Row="9" Grid.Column="1"
+                 />
+                </Grid>
+                <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              x:Name="bntBack"
+              Text="Regresar"
+              TextColor="White"
+              Clicked="bntBack_click" 
+              BackgroundColor="#507BF5"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

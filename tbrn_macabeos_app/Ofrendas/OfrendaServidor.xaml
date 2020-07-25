@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tbrn_macabeos_app.Ofrendas.OfrendaServidor"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+                    <Image Source="taber.png"
+               FlexLayout.Order="-1"
+               FlexLayout.AlignSelf="Center"
+                           WidthRequest="180"
+                           HeightRequest="180" Aspect="AspectFit" />
+                    <Label/>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor=" #b30000"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Ofrendas" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Fechas a Consultar" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Fecha Inicio" BackgroundColor="#507BF5" TextColor="White" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <DatePicker 
+                        x:Name="txtFechaInicio"
+                    Format="d"
+                    HorizontalOptions="Center"
+                    Grid.Row="0" Grid.Column="1"
+                    />
+                    <Label Text="Fecha Fin" BackgroundColor="#507BF5" TextColor="White" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <DatePicker 
+                        x:Name="txtFechaFin"
+                    Format="d"
+                    HorizontalOptions="Center"
+                    Grid.Row="1" Grid.Column="1"
+                    />
+                </Grid>
+                <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              x:Name="bntReporteOfrenda"
+              Text="Reporte Ofrenda"
+              TextColor="White" 
+              BackgroundColor="#507BF5"
+              Clicked="bntReporteOfrenda_click"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Fondos Ministeriales" BackgroundColor="#507BF5" TextColor="White" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <Label x:Name="txtTotalFondos" FontSize="Medium" TextColor="Black" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    </Grid>
+                <Label/>
+                <StackLayout>
+                    <ListView x:Name="lstUsuarios" Header=" " >
+                        <ListView.HeaderTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="Operacion" BackgroundColor="#507BF5" TextColor="White" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Fecha" BackgroundColor="#507BF5" TextColor="White" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Total" BackgroundColor="#507BF5" TextColor="White" Grid.Row="0" Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.HeaderTemplate>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="{Binding tipo_operacion}" FontSize="Medium" TextColor="Black" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                            <Label Text="{Binding fechaString}" FontSize="Medium" TextColor="Black" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                            <Label Text="{Binding Dinero}" FontSize="Medium" TextColor="Black" Grid.Row="0" Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                        </Grid>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.Footer>
+                            <StackLayout>
+                                <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              x:Name="bntBack"
+              Text="Regresar a Menu"
+              TextColor="White"
+              Clicked="bntBack_click" 
+              BackgroundColor="#507BF5"/>
+                            </StackLayout>
+                        </ListView.Footer>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

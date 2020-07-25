@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tbrn_macabeos_app.MenuCompromiso"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label/>
+                <Image Source="taber.png"
+               FlexLayout.Order="-1"
+               FlexLayout.AlignSelf="Center"
+                           WidthRequest="180"
+                           HeightRequest="180" Aspect="AspectFit" />
+                <Label/>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Button Text="Mis Cultos" x:Name="btnCultos" Clicked="btnCultos_Clicked"/>
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Button Text="Agregar Culto" x:Name="btnAgregarCultos" Clicked="btnAgregarCultos_Clicked"/>
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Button Text="Recuperar Culto Eliminado" x:Name="btnCultosEliminados" Clicked="btnCultosEliminados_Clicked"/>
+                </Frame>
+                <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              x:Name="bntBack"
+              Text="Regresar Inicio"
+              TextColor="White"
+              Clicked="bntBack_click" 
+              BackgroundColor="#507BF5"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

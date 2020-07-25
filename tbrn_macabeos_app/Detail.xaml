@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tbrn_macabeos_app.Detail"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="taber.png"
+               FlexLayout.Order="-1"
+               FlexLayout.AlignSelf="Center"
+                           WidthRequest="180"
+                           HeightRequest="180" Aspect="AspectFit" />
+            <Label>
+
+            </Label>
+            <Label Text="Bienvenido Hermano:"
+                FontSize="Large"
+                HorizontalTextAlignment="Center" />
+            <Label>
+
+            </Label>
+            <Label x:Name="Nombre_Completo"
+                FontSize="24"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                Grid.Row="0" Grid.Column="1"
+                 />
+            <Label>
+
+            </Label>
+            <Label Text="Ha Ingresado a MacabeosApp, en esta app manejara su Servicio con el Ministerio Macabeos."
+                FontSize="Large"
+                HorizontalTextAlignment="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

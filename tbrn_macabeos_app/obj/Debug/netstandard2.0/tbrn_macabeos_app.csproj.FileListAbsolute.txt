@@ -1,0 +1,43 @@
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\tbrn_macabeos_app.csprojAssemblyReference.cache
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Detail.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\master.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Principal.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\tbrn_macabeos_app.AssemblyInfoInputs.cache
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\tbrn_macabeos_app.AssemblyInfo.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Cultos\AgregarCompromiso.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Cultos\AgregarCompromisoServidor.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Cultos\ListarCompromisoDesServidor.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Cultos\ListarCompromisos.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Cultos\ListarCompromisosDes.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Cultos\ListarCompromisoServidor.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Cultos\MenuCompromiso.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Usuarios\CambiarContrasenaServidor.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Usuarios\CambioContrasena.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Usuarios\CrearServidor.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Usuarios\ListarDesactivados.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Usuarios\ListarUsuarios.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Usuarios\MenuUsuarios.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Usuarios\ModificarUsuario.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Usuarios\Perfil.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\bin\Debug\netstandard2.0\Taber Macabeos.deps.json
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\bin\Debug\netstandard2.0\Taber Macabeos.dll
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\bin\Debug\netstandard2.0\ref\Taber Macabeos.dll
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\bin\Debug\netstandard2.0\Taber Macabeos.pdb
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Taber Macabeos.dll
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\ref\Taber Macabeos.dll
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Taber Macabeos.pdb
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Equipos\AgregarEquipo.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Equipos\ListarEquipos.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Equipos\MenuEquipos.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Ofrendas\MenuOfrenda.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Ofrendas\OfrendaServidor.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Ofrendas\OfrendaLider.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Ofrendas\InsertarOfrenda.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Asistencias\InsertarAsistencia.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Asistencias\MenuAsistencia.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Asistencias\ListarAsistenciaLider.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Asistencias\ListarAsistenciaServidor.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\Asistencias\ModificarAsistencia.xaml.g.cs
+C:\Users\rlopez\Documents\Pers. Rene Alas\tbrn_macabeos_app - Training\tbrn_macabeos_app\obj\Debug\netstandard2.0\XamlC.stamp

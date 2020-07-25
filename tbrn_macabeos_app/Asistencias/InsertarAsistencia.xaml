@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tbrn_macabeos_app.Asistencias.InsertarAsistencia"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="taber.png"
+               FlexLayout.Order="-1"
+               FlexLayout.AlignSelf="Center"
+                           WidthRequest="180"
+                           HeightRequest="180" Aspect="AspectFit" />
+                <Label>
+
+                </Label>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor=" #b30000"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Agregar Asistencia" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Puesto" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Picker x:Name="txtPuesto"
+        Title="Que Puesto se Cubrira?"
+        SelectedIndexChanged="puestoPicker_SelectedIndexChanged"
+        >
+                    <Picker.ItemDisplayBinding>
+                        <Binding Path="nombre_puesto"/>
+                    </Picker.ItemDisplayBinding>
+                </Picker>
+                
+                <Label x:Name="ValidadorPuesto"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                 />
+                
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Servidor" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Picker x:Name="txtServidor"
+        Title="Que Servidor ira al Puesto?"
+        SelectedIndexChanged="servidorPicker_SelectedIndexChanged"
+        >
+                    <Picker.ItemDisplayBinding>
+                        <Binding Path="fullname"/>
+                    </Picker.ItemDisplayBinding>
+                </Picker>
+
+                <Label x:Name="ValidadorServidor"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                 />
+
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Fecha Servicio" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <DatePicker 
+                        x:Name="txtFecha"
+                    Format="d"
+                    HorizontalOptions="Center"
+                    Margin="15,10,15,10"
+                    DateSelected="fechaSelected_SelectedDateChanged"
+                    />
+                </Frame>
+                
+                <Label x:Name="ValidadorFecha"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                 />
+                
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Culto a Servir" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Picker x:Name="txtCulto"
+        Title="Que culto es el de este Servicio?"
+        SelectedIndexChanged="cultoPicker_SelectedIndexChanged"
+        >
+                    <Picker.ItemDisplayBinding>
+                        <Binding Path="nombre_culto"/>
+                    </Picker.ItemDisplayBinding>
+                </Picker>
+
+                <Label x:Name="ValidadorCulto"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                 />
+
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Radio en Uso" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Picker x:Name="txtRadio"
+        Title="Que Radio Usara?"
+        SelectedIndexChanged="radioPicker_SelectedIndexChanged"
+        >
+                    <Picker.ItemDisplayBinding>
+                        <Binding Path="estatus"/>
+                    </Picker.ItemDisplayBinding>
+                </Picker>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="ValidadorRadio"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                 />
+                    <Label/>
+                    <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              x:Name="bntAgregarServicio"
+              Text="Agregar Servicio"
+              TextColor="White" 
+              BackgroundColor="#507BF5"
+              Grid.Row="0" Grid.Column="0"
+              Clicked="bntAgregarServicio_click"/>
+                    <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              x:Name="bntBack"
+              Text="Regresar a Menu"
+              TextColor="White"
+              Clicked="bntBack_click" 
+              Grid.Row="0" Grid.Column="1"
+              BackgroundColor="#990000"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

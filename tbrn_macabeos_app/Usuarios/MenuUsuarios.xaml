@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tbrn_macabeos_app.MenuUsuarios"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label/>
+                <Image Source="taber.png"
+               FlexLayout.Order="-1"
+               FlexLayout.AlignSelf="Center"
+                           WidthRequest="180"
+                           HeightRequest="180" Aspect="AspectFit" />
+                <Label/>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Button Text="Ver Perfil" x:Name="btnPerfil" Clicked="btnPerfil_Clicked"/>
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Button Text="Cambiar Contraseña" x:Name="btnCambiarContrasena" Clicked="btnCambiarContrasena_Clicked"/>
+
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Button Text="Agregar Servidor" x:Name="btnAgregarServidor" Clicked="btnAgregarServidor_Clicked"/>
+                </Frame>
+
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Button Text="Usuarios Activos" x:Name="btnListadoUsuarios" Clicked="btnListadoUsuarios_Clicked"/>
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Button Text="Usuarios No Activo" x:Name="btnListadoInactivos" Clicked="btnListadoInactivos_Clicked"/>
+                </Frame>
+                <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              x:Name="bntBack"
+              Text="Regresar Inicio"
+              TextColor="White"
+              Clicked="bntBack_click" 
+              BackgroundColor="#507BF5"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

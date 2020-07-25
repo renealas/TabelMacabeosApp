@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tbrn_macabeos_app.AgregarCompromisoServidor"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="taber.png"
+               FlexLayout.Order="-1"
+               FlexLayout.AlignSelf="Center"
+                           WidthRequest="180"
+                           HeightRequest="180" Aspect="AspectFit" />
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor=" #b30000"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Label 
+        Text="Agregar Culto en Compromiso"
+        Margin="5"
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+            </Frame>
+
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Label 
+        Margin="5"
+        Text="Nombre Servidor a Editar" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#00b300"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+         >
+                <Label 
+        x:Name="txtNombre"   
+        Margin="5"
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Label 
+        Margin="5"
+        Text="Culto a Agregar a su Compromiso" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                <Picker x:Name="txtCulto"
+        Title="Que Culto desea Agregar?"
+        SelectedIndexChanged="pickerlist_SelectedIndexChanged"
+        >
+                    <Picker.ItemDisplayBinding>
+                        <Binding Path="nombre_culto"/>
+                    </Picker.ItemDisplayBinding>
+                    <!--<Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Dominical 7 AM</x:String>
+                            <x:String>Dominical 9 AM</x:String>
+                            <x:String>Dominical 11 AM</x:String>
+                            <x:String>Dominical 2 PM</x:String>
+                            <x:String>Dominical 4 PM</x:String>
+                            <x:String>Familias en Victoria</x:String>
+                            <x:String>Torre de Oracion</x:String>
+                            <x:String>Amanceciendo con Dios</x:String>
+                            <x:String>Noche de Amigos</x:String>
+                            <x:String>Noche de Discipulado</x:String>
+                            <x:String>Viernes de Milagros</x:String>
+                            <x:String>Sabado de Milagros</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>-->
+                </Picker>
+            </Frame>
+            <Label x:Name="ValidadorCulto"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                 />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              x:Name="bntCrearCompromiso"
+              Text="Crear Compromiso"
+              TextColor="White" 
+              BackgroundColor="#507BF5"
+              Clicked="bntCrearCompromiso_click"/>
+                <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              x:Name="bntBack"
+              Text="Regresar a Menu"
+              TextColor="White"
+              Clicked="bntBack_click" 
+              Grid.Row="0" Grid.Column="1"
+              BackgroundColor="#990000"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

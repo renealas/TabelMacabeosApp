@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tbrn_macabeos_app.Equipos.AgregarEquipo"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Image Source="taber.png"
+               FlexLayout.Order="-1"
+               FlexLayout.AlignSelf="Center"
+                           WidthRequest="180"
+                           HeightRequest="180" Aspect="AspectFit" />
+            <Label>
+
+            </Label>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor=" #b30000"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Label 
+        Margin="5"
+        Text="Agregar Radio" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Label 
+        Margin="5"
+        Text="Serial de Radio" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                <Entry 
+        Placeholder="Numero de Serial"
+        x:Name="txtSerial"   
+        HorizontalTextAlignment="Center"
+        TextChanged="cambioSerial"
+        />
+            </Frame>
+                <Label x:Name="ValidadorSerial"
+                Text="Favor llenar el numero de Serial del Radio"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                IsVisible="True"
+                 />
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Label 
+        Margin="5"
+        Text="Numero de Radio" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                <Entry 
+        Placeholder="Numero de Radio"
+        x:Name="txtNumero"   
+        HorizontalTextAlignment="Center"
+        TextChanged="cambioNumRadio"
+        />
+            </Frame>
+                <Label x:Name="ValidadorRadio"
+                Text="Favor llenar el numero de lista del Radio"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                IsVisible="True"
+                 />
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Label 
+        Margin="5"
+        Text="Observaciones de Radio" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+            </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <Entry 
+        Placeholder="Observaciones de Radio"
+        x:Name="txtObservacion"   
+        HorizontalTextAlignment="Center"
+        TextChanged="cambioObserv"
+        Completed="completadoObserv"
+        />
+                </Frame>
+                <Label x:Name="ValidadorObservacion"
+                Text="Favor llenar Observaciones o Nombre Radio"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                IsVisible="True"
+                 />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              IsEnabled="False"
+              x:Name="bntAgregarRadio"
+              Text="Agregar Radio"
+              TextColor="White"                    
+              BackgroundColor="#507BF5"
+              Grid.Row="0" Grid.Column="0"
+              Clicked="bntAgregarRadio_click"/>
+                    <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              x:Name="bntBack"
+              Text="Regresar a Menu"
+              TextColor="White"
+              Clicked="bntBack_click" 
+              Grid.Row="0" Grid.Column="1"
+              BackgroundColor="#990000"/>
+                </Grid>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

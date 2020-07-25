@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "22651843543",
+    "firebase_url": "https://macabeos-taber.firebaseio.com",
+    "project_id": "macabeos-taber",
+    "storage_bucket": "macabeos-taber.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22651843543:android:0b7468ae1cc71aca689192",
+        "android_client_info": {
+          "package_name": "com.companyname.tbrn_macabeos_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22651843543-s98dqkdlqemfh1vfet2aggmaaog0j9hv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_f3NG62F9RtbZYCGeFNt-B1lAXOi3yNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22651843543-s98dqkdlqemfh1vfet2aggmaaog0j9hv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tbrn_macabeos_app.master"
+             Title="Macabeos TaberApp">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label/>
+            <Image Source="taber.png"
+               FlexLayout.Order="-1"
+               FlexLayout.AlignSelf="Center"
+                           WidthRequest="180"
+                           HeightRequest="180" Aspect="AspectFit" />
+            <Label/>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Button Text="Usuarios / Servidores" x:Name="btnUsuarios" Clicked="btnUsuarios_Clicked"/>
+            </Frame>
+
+
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Button Text="Cultos / Compromiso" x:Name="btnCultos" Clicked="btnCultos_Clicked"/>
+            </Frame>       
+
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Button Text="Ofrendas" x:Name="btnOfrendas" Clicked="btnOfrendas_Clicked"/>
+            </Frame>
+
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Button Text="Asistencia" x:Name="btnAsistencia" Clicked="btnAsistencia_Clicked"/>
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Button Text="Equipos / Radios" x:Name="btnRadios" Clicked="btnRadios_Clicked"/>
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Button Text="Cerrar Session" x:Name="btnCerrar" Clicked="btnCerrar_Clicked" BackgroundColor="#990000" TextColor="White"/>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

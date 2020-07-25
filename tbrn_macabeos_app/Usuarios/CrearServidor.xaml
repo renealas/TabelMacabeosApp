@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tbrn_macabeos_app.CrearServidor"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="taber.png"
+               FlexLayout.Order="-1"
+               FlexLayout.AlignSelf="Center"
+                           WidthRequest="180"
+                           HeightRequest="180" Aspect="AspectFit" />
+                <Label>
+
+                </Label>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor=" #b30000"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Crear Servidor" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Nombre Servidor" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <Entry 
+        Placeholder="Nombre Servidor"
+        x:Name="txtNombre"   
+        HorizontalTextAlignment="Center"
+        Unfocused="nameChange"
+        />
+                </Frame>
+                <Label x:Name="ValidadorNombre"
+                 Text="Favor llenar el nombre del Servidor"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                IsVisible="True"
+                 />
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Apellido Servidor" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <Entry 
+        Placeholder="Apellido Servidor"
+        x:Name="txtApellido"   
+        HorizontalTextAlignment="Center"
+        Unfocused="cambioApellido"
+        />
+                </Frame>
+                <Label x:Name="ValidadorApellido"
+                Text="Favor llenar el apellido del Servidor"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                IsVisible="True"
+                 />
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="DUI" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <Entry 
+        Placeholder="DUI"
+        x:Name="txtDui"   
+        HorizontalTextAlignment="Center"
+        MaxLength="9"
+        TextChanged="OnChangeDui"
+        Unfocused="cambioDui"
+        />
+                </Frame>
+                <Label x:Name="ValidadorDui"
+                Text="Favor llenar el DUI del Servidor"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                IsVisible="True"
+                 />
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Fecha de Nacimiento" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <DatePicker 
+                        x:Name="txtFechaNacimiento"
+                    Format="d"
+                    HorizontalOptions="Center"
+                    Margin="15,10,15,10"
+                    DateSelected="cambioFechaNacimiento" 
+                    />
+                </Frame>
+                <Label x:Name="ValidadorFechaNacimiento"
+                Text="Favor seleccionar Fecha de Nacimiento de el Servidor"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                IsVisible="True"
+                 />
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Telefono" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <Entry 
+        Placeholder="Telefono"
+        x:Name="txtTelefono"   
+        HorizontalTextAlignment="Center"
+        MaxLength="8"
+        TextChanged="OnChangeTelefono"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Lugar de Trabajo" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <Entry 
+        Placeholder="Lugar de Trabajo"
+        x:Name="txtLugarTrabajo"   
+        HorizontalTextAlignment="Center"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Telefono de Trabajo" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <Entry 
+        Placeholder="Telefono de Trabajo"
+        x:Name="txtTelefonoTrabajo"   
+        HorizontalTextAlignment="Center"
+        MaxLength="8"
+        TextChanged="OnChangeTelTrab"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Contacto de Emergencia" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <Entry 
+        Placeholder="Contacto de Emergencia"
+        x:Name="txtContacto"   
+        HorizontalTextAlignment="Center"        
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Telefono de Contacto" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <Entry 
+        Placeholder="Telefono de Contacto"
+        x:Name="txtTelefonoContacto"   
+        HorizontalTextAlignment="Center"
+        MaxLength="8"
+        TextChanged="OnChangeTelEmer"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Fecha de Ingreso" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <DatePicker 
+                        x:Name="txtFechaIngreso"
+                    Format="d"
+                    HorizontalOptions="Center"
+                    Margin="15,10,15,10"
+                    DateSelected="cambioFechaIngreso" 
+                     />
+                </Frame>
+                <Label x:Name="ValidadorFechaIngreso"
+                Text="Favor seleccionar Fecha de Ingreso de el Servidor"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                IsVisible="True"
+                 />
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Radio Propio" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <Picker x:Name="txtRadioPropio"
+        Title="Cuenta con Radio Propio?"
+        SelectedIndexChanged="seleccionRadio"
+        >
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Si</x:String>
+                                <x:String>No</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </Frame>
+                <Label x:Name="ValidadorRadio"
+                Text="Favor informar si el Servidor cuenta con Radio Propio"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                IsVisible="True"
+                 />
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Foto de Servidor" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Image x:Name="imgCamara" />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10" 
+        WidthRequest="60"
+        HeightRequest="60"
+        HasShadow="False"
+        >
+                    <ImageButton Source="drawable/camera.png"  x:Name="btnFoto" Clicked="btnFoto_click"/>
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                    <Label 
+        Margin="5"
+        Text="Tipo de Acceso" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+                </Frame>
+                <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                    <Picker x:Name="txtAcceso"
+        Title="Tipo de Acceso a la App"
+        SelectedIndexChanged="change"
+        >
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Administrador</x:String>
+                                <x:String>Lider</x:String>
+                                <x:String>Servidor</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </Frame>
+                <Label x:Name="ValidadorAcceso"
+                Text="Favor seleccione el Acceso del Servidor"
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"
+                TextColor="Red"
+                IsVisible="True"
+                 />
+                <ActivityIndicator x:Name="waitActivityIndicator"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Color="Maroon"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              IsEnabled="False"
+              x:Name="bntCrearServidor"
+              Text="Crear Servidor"
+              TextColor="White" 
+              Grid.Row="0" Grid.Column="0"
+              BackgroundColor="#507BF5"
+              Clicked="bntCrearServidor_click"/>
+                    <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              x:Name="bntBack"
+              Text="Regresar a Menu"
+              TextColor="White"
+              Clicked="bntBack_click" 
+              Grid.Row="0" Grid.Column="1"
+              BackgroundColor="#990000"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
